@@ -16,7 +16,6 @@ if(isset($_POST['valider'])){
 
         $password = $salt.$_POST['password'].$salt;
         $password = hash('sha256', $password);
-        $password = trim(htmlspecialchars($password));
         
         $sql = $pdo->prepare ("INSERT INTO `user`(last_name,first_name,email,password)
                 VALUES (:nom, :prenom, :email, :password)");
