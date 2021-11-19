@@ -1,96 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/" type="image/x-icon">
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>Sapinoël</title>
-</head>
-<body>
-    <!-- header section starts -->
-    <header class="header">
-        <a href="#" class="logo"><i class="las la-tree"></i>Sapinoël</a>
-        <nav class="navbar">
-            <a href="#">Nos Sapins</a>
-            <a href="#">Nos Décorations</a>
-            <a href="#">Catalogue</a>
-            <a href="#">Nous connaitre</a>
-        </nav>
-        <div class="icons">
-            <div class="fas fa-bars" id="menu-btn"></div>
-            <div class="fas fa-search" id="search-btn"></div>
-            <div class="fas fa-shopping-cart" id="cart-btn"></div>
-            <div class="fas fa-user" id="login-btn"></div>
-        </div>
-        <form action="" class="search-form">
-            <input type="scearch" id="scearch-box" placeholder="Rechercher">
-            <label for="scearch-box" class="fas fa-search"></label>
-        </form>
-        <div class="shopping-cart">
-            <h4>Mon panier</h4>
-            <div class="box">
-                <i class="fas fa-trash-alt"></i>
-                <img src="./img/sapin1.png" alt="sapin">
-                <div class="content">
-                    <h3>Sapin 1</h3>
-                    <span class="price">29,99€</span>
-                    <span class="quantity">Qté : 1</span>
-                </div>
-            </div>
-            <div class="box">
-                <i class="fas fa-trash-alt"></i>
-                <img src="./img/sapin1.png" alt="sapin">
-                <div class="content">
-                    <h3>Sapin 2</h3>
-                    <span class="price">49,99€</span>
-                    <span class="quantity">Qté : 1</span>
-                </div>
-            </div>
-            <div class="box">
-                <i class="fas fa-trash-alt"></i>
-                <img src="./img/sapin1.png" alt="sapin">
-                <div class="content">
-                    <h3>Sapin 3</h3>
-                    <span class="price">69,99€</span>
-                    <span class="quantity">Qté : 1</span>
-                </div>
-            </div>
-            <div class="total">Total : 149,97€</div>
-            <a href="#" class="btn">Commander</a>
-        </div>
-        <form action="" class="login-form">
-            <h3>Se connecter</h3>
-            <input type="email" placeholder="Votre mail" class="box">
-            <input type="password" placeholder="Votre mot de passe" class="box">
-            <p>Mot de passe oublié <a href="#">Cliquez ici !</a></p>
-            <p>Vous n'avez pas de compte  <span id= "subscribe-link">Créér un compte</span></p>
-            <input type="submit" value="Se connecter" class="btn">
-        </form>
-        <form action="" class="subscribe-form" id="subscribe-link">
-            <h3>S'incrire</h3>
-            <input type="text" placeholder="Votre pseudo" class="box">
-            <input type="email" placeholder="Votre mail" class="box">
-            <input type="password" placeholder="Votre mot de passe" class="box">
-            <input type="password" placeholder="Confirmez votre mot de passe" class="box">
-            <p>Mot de passe oublié <a href="#">Cliquez ici !</a></p>
-            <input type="submit" value="S'incrire" class="btn">
-        </form>
-    </header>
-    <!-- header section ends -->
-    <!-- home section starts -->
-    <section class="home"> 
-        <div class="content">
-            <h1>Sapinoël</h1>
-            <p>La <span> magie de Noël</span> commence par un sapin</p>
-            <a href="#" class="btn">Notre catalogue</a>
-        </div>
-    </section>
-    <!-- home section ends -->
+<?php require_once("./pages/header.php") ?>
+
     <!-- products section starts -->
     <section class="products">
         <h2 class="heading"><span>Nos</span> Sapins</h2>
@@ -275,38 +186,7 @@
     <!-- ours section ends -->
     <!-- footer section starts -->
     <footer>
-        <div class="box-container">
-            <div class="box">
-                <h3 class="titre">Sapinoël <i class="las la-tree"></i></h3>
-                <p>La magie de Noël commence par un sapin</p>
-                <div class="share">
-                    <a href="https://www.facebook.com" class="fab fa-facebook-f"><i></i></a>
-                    <a href="https://www.twitter.com" class="fab fa-twitter"></a>
-                    <a href="https://www.instragram.com" class="fab fa-instagram"></a>
-                    <a href="https://www.linkedin.com" class="fab fa-linkedin-in"></a>
-                </div>
-            </div>
-            <div class="box">
-                <h3>Contact</h3>
-                <a href="#" class="links"><i class="fas fa-phone"></i> 01 23 45 67 89</a>
-                <a href="#" class="links"><i class="fas fa-phone"></i> 02 23 45 67 89</a>
-                <a href="#" class="links"><i class="fas fa-envelope"></i> sapinoel@sapinoel.fr</a>
-                <a href="#" class="links"><i class="fas fa-map-marker-alt"></i> 14460 Colombelles - France</a>
-            </div>
-            <div class="box">
-                <h3>Liens rapides</h3>
-                <a href="#" class="links"><i class="fas fa-arrow-right"></i> Accueil</a>
-                <a href="#" class="links"><i class="fas fa-arrow-right"></i> Nos Sapins</a>
-                <a href="#" class="links"><i class="fas fa-arrow-right"></i> Nos Décorations</a>
-                <a href="#" class="links"><i class="fas fa-arrow-right"></i> Notre catalogue</a>
-            </div>
-            <div class="box">
-                <h3>Newsletter</h3>
-                <p>Inscrivez-vous pour obtenir les dernière infos</p>
-                <input type="email" placeholder="Votre email" class="email">
-                <input type="submit" value="Inscrivez-vous" class="btn">
-            </div>
-        </div>
+        <?php require_once("./pages/footer.php")?>
     </footer>
     <!-- footer section ends -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
