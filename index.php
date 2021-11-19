@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-<?php require_once("./pages/header.php") ?>
+<?php require_once("./pages/header.php"); ?>
 
     <!-- products section starts -->
     <section class="products">
@@ -186,7 +186,7 @@
     <!-- ours section ends -->
     <!-- footer section starts -->
     <footer>
-        <?php require_once("./pages/footer.php")?>
+        <?php require_once("./pages/footer.php"); ?>
     </footer>
     <!-- footer section ends -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>

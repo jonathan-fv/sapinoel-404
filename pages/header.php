@@ -1,3 +1,4 @@
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +15,7 @@
     <header class="header">
         <a href="#" class="logo"><i class="las la-tree"></i>Sapinoël</a>
         <nav class="navbar">
-            <a href="#">Nos Sapins</a>
+            <a href="../">Nos Sapins</a>
             <a href="#">Nos Décorations</a>
             <a href="#">Catalogue</a>
             <a href="#">Nous connaitre</a>
@@ -61,7 +62,7 @@
             <div class="total">Total : 149,97€</div>
             <a href="#" class="btn">Commander</a>
         </div>
-        <form action="" class="login-form">
+        <form action="" class="login-form" metho="POST">
             <h3>Se connecter</h3>
             <input type="email" placeholder="Votre mail" class="box">
             <input type="password" placeholder="Votre mot de passe" class="box">
@@ -69,14 +70,14 @@
             <p>Vous n'avez pas de compte  <span id= "subscribe-link">Créér un compte</span></p>
             <input type="submit" value="Se connecter" class="btn">
         </form>
-        <form action="" class="subscribe-form" id="subscribe-link">
+        <form action="functions/inscription.php" class="subscribe-form" id="subscribe-link" method="POST">
             <h3>S'incrire</h3>
-            <input type="text" placeholder="Votre pseudo" class="box">
-            <input type="email" placeholder="Votre mail" class="box">
-            <input type="password" placeholder="Votre mot de passe" class="box">
-            <input type="password" placeholder="Confirmez votre mot de passe" class="box">
+            <input type="text" placeholder="Votre Nom" class="box" name="first_name" required minlength="2">
+            <input type="text" placeholder="Votre Prénom" class="box" name="last_name" required minlength="2">
+            <input type="email" placeholder="Votre mail" class="box" name="email" required minlength="4">
+            <input type="password" placeholder="Votre mot de passe" class="box" name="password" required minlength="4">
             <p>Mot de passe oublié <a href="#">Cliquez ici !</a></p>
-            <input type="submit" value="S'incrire" class="btn">
+            <input type="submit" value="S'incrire" class="btn" name="valider">
         </form>
     </header>
     <!-- header section ends -->
