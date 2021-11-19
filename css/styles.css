@@ -1,0 +1,546 @@
+/* Import de fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap');
+
+/* Variables CSS */
+:root{
+    --gold : #F7DD00;
+    --black : #333;
+    --red : #F01E28;
+    --green : #095228;
+    --box-shadow : 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    --border : .2rem solid rgba(0, 0, 0, .1);
+    --outline : .1rem solid rgba(0, 0, 0, .1);
+    --outline-hover : .2rem solid var(--black);
+}
+/* General CSS */
+ *{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+body{
+    background: #eee;
+}
+section{
+    padding: 2rem 9%;
+}
+a{
+    color: var(--black);
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--black);
+    color : var(--black);
+    cursor: pointer;
+    background: none;
+}
+.btn:hover{
+    background: var(--gold);
+    color: #fff;
+}
+.heading{
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color: var(--black);
+    text-transform: capitalize;
+}
+.heading span{
+    color: var(--gold);
+}
+/* Navigation CSS */
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+}
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color : var(--black);
+    display: flex;
+    align-items: center;
+}
+.las{
+    color : var(--green);
+    font-size: 7rem;
+}
+.header .logo{
+    font-family: 'Bilbo Swash Caps', sans-serif;
+    color: var(--gold);
+    font-size: 5rem;
+    font-weight: 400;
+}
+.header .navbar a{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+}
+.header .navbar a:hover{
+    color: var(--gold);
+}
+.header .icons div{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: var(--black);
+    font-size: 2rem;
+    margin-right: .3rem;
+    text-align: center;
+    cursor: pointer;
+}
+.header .icons div:hover{
+    background: var(--gold);
+    color: #fff;
+}
+/* Search bar CSS */
+.header .search-form{
+    position: absolute;
+    top: 110%; right: -110%;
+    width: 50rem;
+    height: 5rem;
+    background: #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+.header .search-form.active{
+    right: 2rem;
+    transition: .4s linear;
+}
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform:  none;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 0 1.5rem;
+}
+.header .search-form label{
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+.header .search-form label:hover{
+    color: var(--gold);
+}
+/* Shopping cart CSS */
+.header .shopping-cart{
+    position: absolute;
+    top: 110%; right: -110%;
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    width: 35rem;
+    background: #fff;
+}
+.header .shopping-cart h4{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+}
+.header .shopping-cart.active{
+    right: 2rem;
+    transition: .4s linear;
+} 
+.header .shopping-cart .box{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    margin: 1rem 0;
+}
+.header .shopping-cart .box img{
+    height: 10rem;
+}
+.header .shopping-cart .box .fa-trash-alt{
+    font-size: 2rem;
+    position: absolute;
+    top: 50%; right: 2rem;
+    cursor: pointer;
+    color: var(--black);
+    transform: translateY(-50%)
+}
+.header .shopping-cart .box .fa-trash-alt:hover{
+    color: var(--gold);
+}
+.header .shopping-cart .box .content h3{
+    color: var(--black);
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+}
+.header .shopping-cart .box .content span{
+    color: var(--black);
+    font-size: 1.6rem;
+    padding-bottom: 1rem
+}
+.header .shopping-cart .box .content .quantity{
+    padding-left: 1rem;
+}
+.header .shopping-cart .total{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--black);
+}
+.header .shopping-cart .btn{
+    display: block;
+    text-align: center;
+    margin: 1rem;
+} 
+#menu-btn{
+    display: none;
+}
+/* Login form CSS */
+.header .login-form, 
+.header .subscribe-form{
+    position: absolute;
+    top: 110%; right: -110%;
+    width: 40rem;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    border-radius: .5rem;
+    background: #fff;
+    text-align: center;
+}
+.header .login-form.active,
+.header .subscribe-form.active{
+    right: 2rem;
+    transition: .4s linear;
+}
+.header .login-form h3,
+.header .subscribe-form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color : var(--black);
+}
+.header .login-form .box,
+.header .subscribe-form .box{
+    width: 100%;
+    margin: .7rem 0;
+    background: #eee;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+}
+.header .login-form p,
+.header .subscribe-form p{
+    font-size: 1.4rem;
+    padding: .5rem 0;
+    color: var(--black);
+}
+.header .login-form p a,
+.header .subscribe-form p a{
+    color: var(--gold);
+    text-decoration: underline;
+}
+.header .login-form p span,
+.header .subscribe-form p span{
+    color: var(--gold);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Section CSS */
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background: url(../img/banner.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 15rem;
+    padding-bottom: 10rem;
+}
+.home .content{
+    text-align: center;
+    width: 60rem;
+}
+.home .content h1{
+    font-family: 'Bilbo Swash Caps', sans-serif;
+    color: var(--gold);
+    font-size: 8rem;
+    font-weight: 400;
+}
+.home .content p{
+    font-family: 'Bilbo Swash Caps', sans-serif;
+    font-size: 4rem;
+    padding: 1rem 0;
+    color: var(--black);
+    line-height: 1.8;
+}
+.home .content p span{
+    font-family: 'Bilbo Swash Caps', sans-serif;
+    color: var(--gold);
+    font-weight: 600;
+}
+/* products section css */
+.products .product-slider{
+    padding: 1rem;
+}
+.products .product-slider:first-child{
+    margin-bottom: 2rem;
+}
+.products .product-slider .box{
+    background: #fff;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    outline-offset: -1rem;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+    transition: .2s linear;
+}
+.products .product-slider .box:hover{
+    outline-offset: 0;
+    outline: var(--outline-hover);
+}
+.products .product-slider .box img{
+    width: 70%;
+    height: auto;
+}
+.products .product-slider .box h3{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+.products .product-slider .box .price{
+    font-size: 2rem;
+    color : var(--black);
+    padding: .5rem 0;
+}
+.products .product-slider .box .stars i{
+    font-size: 1.5rem;
+    color: var(--gold);
+    padding: .5rem 0;
+}
+/* categories Section CSS */
+.categorie .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap: 1.5rem; 
+}
+.categorie .box-container .box{
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+}
+.categorie .box-container .box:hover{
+    outline: var(--outline-hover);
+    outline-offset: 0;
+}
+.categorie .box-container .box img{
+    margin: 1rem 0;
+    width: 100%;
+    height: auto;
+}
+.categorie .box-container .box h3{
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color: var(--black);
+} 
+.categorie .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--black);
+    padding: 1rem 0;
+}
+/* ours Section CSS */
+.ours .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem; 
+}
+.ours .box-container .box{
+    padding: 3rem 2rem;
+    background: #fff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+.ours .box-container .box:hover{
+    outline: var(--outline-hover);
+    outline-offset: 0;
+}   
+.ours .box-container .box img{
+    margin: 1rem 0;
+    width: 100%;
+    height: auto; 
+}
+.ours .box-container .box h3{
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color: var(--black);
+}
+.ours .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--black);
+    padding: 1rem 0;
+}
+footer{
+    background: var(--gold);
+    padding: 4rem;
+    margin-top: 10rem
+}
+footer .box-container .box .titre{
+    font-size: 5rem;
+    font-family: 'Bilbo Swash Caps', sans-serif;
+    padding-bottom: 0;
+}
+footer .box-container .box h3 .las{
+    color: var(--green);
+}
+footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem; 
+}
+footer .box-container .box h3{
+    font-size: 2.5rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+footer .box-container .box .links{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+footer .box-container .box .links .fas{
+    color: #fff;
+    padding-right: .5rem;
+}
+footer .box-container .box .links:hover i{
+    padding-right: 2rem;
+}
+footer .box-container .box p{
+    line-height: 1.8;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 1rem 0 1rem 1rem
+}
+footer .box-container .box .share a{
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    color: var(--black);
+    margin-left: .2rem;
+    background: #eee;
+    text-align: center;
+}
+footer .box-container .box .share a:hover{
+    background: var(--green);
+    color: #fff;
+}
+
+footer .box-container .box .email{
+    width: 100%;
+    margin: .7rem 0;
+    padding: 1rem;
+    border-radius: .5rem;
+    background: #eee;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+}
+footer .box-container .box .btn:hover{
+    background: var(--green);
+    color: #fff;
+}
+
+
+
+/* Responsive CSS */  
+@media (max-width: 1030px){
+    /* Navigation CSS */
+    .header .navbar a{
+        font-size: 1.5rem;
+        
+    }
+}
+@media (max-width: 991px) {
+    /* General CSS */
+    html{
+        font-size: 55%;
+    }
+    section{
+        padding: 2rem;
+    }
+    /* Navigation CSS */
+    .header{
+        padding: 2rem;
+    }
+}
+@media (max-width: 750px) {
+    /* Navigation CSS */
+    .header .navbar{
+        position: absolute;
+        top: 110%; right: -100%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background: #fff;
+    }
+    .header .navbar.active{
+        right: 2rem;
+        transition: .4s linear;
+    }
+    .header .navbar a{
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+    .header .search-form{
+        width: 90%;
+    }
+    #menu-btn{
+        display: inline-block;
+    }
+    
+}
+
+@media (max-width: 450px) {
+    /* General CSS */
+    html{
+        font-size: 50%;
+    }
+    .heading{
+        font-size: 2.5rem;
+    }
+}
