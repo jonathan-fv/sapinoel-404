@@ -13,12 +13,12 @@
 <body>
     <!-- header section starts -->
     <header class="header">
-        <a href="#" class="logo"><i class="las la-tree"></i>Sapinoël</a>
+        <a href="index.php" class="logo"><i class="las la-tree"></i>Sapinoël</a>
         <nav class="navbar">
             <a href="./pages/sapins_naturels.php">Sapins Naturels</a>
             <a href="./pages/sapins_artificiels.php">Sapins Artificiels</a>
             <a href="./pages/decorations.php">Décorations</a>
-            <a href="#">Nous connaitre</a>
+            <a href="#about">Nous connaitre</a>
         </nav>
         <div class="icons">
             <div class="fas fa-bars" id="menu-btn"></div>
@@ -86,7 +86,6 @@
         <div class="content">
             <h1>Sapinoël</h1>
             <p>La <span> magie de Noël</span> commence par un sapin</p>
-            <a href="#" class="btn">Notre catalogue</a>
         </div>
     </section>
     <!-- home section ends -->

@@ -11,8 +11,8 @@
             </div>
             <div class="box">
                 <h3>Contact</h3>
-                <a href="#" class="links"><i class="fas fa-phone"></i> 01 23 45 67 89</a>
                 <a href="#" class="links"><i class="fas fa-phone"></i> 02 23 45 67 89</a>
+                <a href="#" class="links"><i class="fas fa-phone"></i> 06 23 45 67 89</a>
                 <a href="#" class="links"><i class="fas fa-envelope"></i> sapinoel@sapinoel.fr</a>
                 <a href="#" class="links"><i class="fas fa-map-marker-alt"></i> 14460 Colombelles - France</a>
             </div>
