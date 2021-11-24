@@ -18,7 +18,7 @@
             <a href="./pages/sapins_naturels.php">Sapins Naturels</a>
             <a href="./pages/sapins_artificiels.php">Sapins Artificiels</a>
             <a href="./pages/decorations.php">Décorations</a>
-            <a href="#about">Nous connaitre</a>
+            <a href="index.php#about">Nous connaitre</a>
         </nav>
         <div class="icons">
             <div class="fas fa-bars" id="menu-btn"></div>
