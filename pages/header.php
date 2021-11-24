@@ -15,9 +15,9 @@
     <header class="header">
         <a href="#" class="logo"><i class="las la-tree"></i>Sapinoël</a>
         <nav class="navbar">
-            <a href="../">Nos Sapins</a>
-            <a href="#">Nos Décorations</a>
-            <a href="#">Catalogue</a>
+            <a href="./pages/sapins_naturels.php">Sapins Naturels</a>
+            <a href="./pages/sapins_artificiels.php">Sapins Artificiels</a>
+            <a href="./pages/decorations.php">Décorations</a>
             <a href="#">Nous connaitre</a>
         </nav>
         <div class="icons">
