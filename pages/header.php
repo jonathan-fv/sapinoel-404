@@ -1,24 +1,12 @@
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/" type="image/x-icon">
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>Sapinoël</title>
-</head>
 <body>
     <!-- header section starts -->
     <header class="header">
-    <a href="index.php" class="logo"><i class="las la-tree"></i>Sapinoël</a>
+    <a href="/index.php" class="logo"><i class="las la-tree"></i>Sapinoël</a>
         <nav class="navbar">
-            <a href="../pages/sapins_naturels.php">Sapins Naturels</a>
-            <a href="../pages/sapins_artificiels.php">Sapins Artificiels</a>
-            <a href="../pages/decorations.php">Décorations</a>
-            <a href="index.php#about">Nous connaitre</a>
+            <a href="/pages/sapins_naturels.php">Sapins Naturels</a>
+            <a href="/pages/sapins_artificiels.php">Sapins Artificiels</a>
+            <a href="/pages/decorations.php">Décorations</a>
+            <a href="/index.php#about">Nous connaitre</a>
         </nav>
         <div class="icons">
             <div class="fas fa-bars" id="menu-btn"></div>
@@ -28,7 +16,8 @@
         </div>
         <form action="" class="search-form">
             <input type="scearch" id="scearch-box" placeholder="Rechercher">
-            <label for="scearch-box" class="fas fa-search"></label>
+            <label for="scearch-box"></label>
+            <button><i class="fas fa-search"></i></button>
         </form>
         <div class="shopping-cart">
             <h4>Mon panier</h4>
