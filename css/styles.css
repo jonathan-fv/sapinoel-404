@@ -101,16 +101,20 @@ a{
     color: var(--gold);
 }
 .header .icons div{
-    height: 4.5rem;
-    width: 4.5rem;
-    line-height: 4.5rem;
+    height: 5.5rem;
+    width: 5.5rem;
+    line-height: 5.5rem;
     border-radius: .5rem;
     background: #eee;
     color: var(--black);
     font-size: 2rem;
-    margin-right: .3rem;
+    margin-right: .4rem;
     text-align: center;
     cursor: pointer;
+}
+.header .icons div span{
+    border-radius: 50%;
+    padding : 0.5rem;
 }
 .header .icons div:hover{
     background: var(--gold);
@@ -507,7 +511,7 @@ footer .box-container .box .btn:hover{
         padding: 2rem;
     }
 }
-@media (max-width: 750px) {
+@media (max-width: 1145px) {
     /* Navigation CSS */
     .header .navbar{
         position: absolute;

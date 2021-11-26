@@ -15,6 +15,37 @@ require_once(__DIR__.'../../functions/product.php');
     <title>Sapinoël</title>
 </head>
 <?php require_once('../pages/header.php') ?>
-<body>    
+    <section class="products">
+        <h2 class="heading"><span>Nos</span> Sapins naturels</h2>
+        <div class="product-slider">
+            <?php foreach ($naturalFirs as $naturalFir) : ?>
+                <div class="swiper-slide box">
+                    <img src="../<?= $naturalFir['product_img'] ?>" alt="<?= $naturalFir['product_name'] ?>">
+                    <h3><?= $naturalFir['product_name'] ?></h3>
+                    <div>
+                        <h5>Decription:</h5>
+                        <p class="desc"><?= $naturalFir['product_desc'] ?></p>
+                        <hr>
+                        <h5>Taille:</h5>
+                        <p class=height><?= $naturalFir['height'] . "cm" ?></p>
+                        <hr>
+                    </div>
+                    <div class="price"><?= $naturalFir['product_price'] . ",00€" ?></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">Ajouter au panier</a>
+                </div>
+            <?php endforeach; ?>
+        </div>
+    </section>
+<footer>
+    <?php require_once("../pages/footer.php"); ?>
+</footer>
+<script src="../js/app.js"></script>  
 </body>
 </html>
