@@ -1,12 +1,12 @@
+<?php
+    require_once("./functions/product.php");
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
 <?php
-    require_once(__DIR__.'/functions/dbconnect.php');
-    require_once(__DIR__.'/functions/product.php');
-    require_once('./pages/header.php'); 
+    include("./pages/header.php"); 
 ?>
-
     <!-- products section starts -->
     <section class="products">
         <h2 class="heading"><span>Nos</span> Sapins naturels</h2>

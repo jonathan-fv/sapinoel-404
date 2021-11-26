@@ -1,6 +1,7 @@
 <?php
 
-require_once("./dbconnect.php");
+require_once(__DIR__.'./dbconnect.php');
+
 $salt = "6z7GKa9kpDN7KC3ICW1Hi.";
 
 $signStatement = $pdo->prepare('SELECT * FROM `user`');
