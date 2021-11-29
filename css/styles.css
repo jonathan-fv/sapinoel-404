@@ -4,7 +4,7 @@
 
 /* Variables CSS */
 :root{
-    --gold : #F7DD00;
+    --gold : #DA9100;
     --black : #333;
     --red : #F01E28;
     --green : #095228;
@@ -275,8 +275,8 @@ a{
     display: flex;
     align-items: center;
     justify-content: left;
-    background: url(../img/banner.jpg) no-repeat;
-    background-position: center;
+    background: linear-gradient(90deg, rgba(255,255,255,0.44019614681810226) 0%, rgba(255,255,255,0.26092443813462884) 30%, rgba(255,255,255,0) 63%), url(../img/banner.jpg) no-repeat;
+    background-position: bottom;
     background-size: cover;
     padding-top: 15rem;
     padding-bottom: 10rem;
