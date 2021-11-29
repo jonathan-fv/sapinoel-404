@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
 <?php require_once("./pages/header.php") ?>
-
-
     <!-- products section starts -->
     <section class="products">
         <h2 class="heading"><span>Nos</span> Sapins</h2>
