@@ -1,7 +1,7 @@
 <body>
     <!-- header section starts -->
     <header class="header">
-    <a href="/index.php" class="logo"><i class="las la-tree"></i>Sapinoël</a>
+    <a href="/index.php" class="logo"><i class="las la-tree"></i>Yukinooh</a>
         <nav class="navbar">
             <a href="/pages/sapins_naturels.php">Sapins Naturels</a>
             <a href="/pages/sapins_artificiels.php">Sapins Artificiels</a>
@@ -23,7 +23,7 @@
             <h4>Mon panier</h4>
             <div class="box">
                 <i class="fas fa-trash-alt"></i>
-                <img src="./img/sapin1.png" alt="sapin">
+                <img src="../img/sapin1.png" alt="sapin">
                 <div class="content">
                     <h3>Sapin 1</h3>
                     <span class="price">29,99€</span>
@@ -32,7 +32,7 @@
             </div>
             <div class="box">
                 <i class="fas fa-trash-alt"></i>
-                <img src="./img/sapin1.png" alt="sapin">
+                <img src="../img/sapin1.png" alt="sapin">
                 <div class="content">
                     <h3>Sapin 2</h3>
                     <span class="price">49,99€</span>
@@ -41,7 +41,7 @@
             </div>
             <div class="box">
                 <i class="fas fa-trash-alt"></i>
-                <img src="./img/sapin1.png" alt="sapin">
+                <img src="../img/sapin1.png" alt="sapin">
                 <div class="content">
                     <h3>Sapin 3</h3>
                     <span class="price">69,99€</span>
@@ -51,7 +51,38 @@
             <div class="total">Total : 149,97€</div>
             <a href="#" class="btn">Commander</a>
         </div>
-        <form action="" class="login-form" metho="POST">
+        <?php 
+            if(isset($_GET['login_err']))
+            {
+                $err = htmlspecialchars($_GET['login_err']);
+
+                switch($err)
+                {
+                    case 'password':
+                        ?>
+                        <div class="alert alert-danger">
+                            <strong>Erreur:</strong> Mot de passe incorrect
+                        </div>
+                    <?php
+                    break;
+                    case 'email':
+                        ?>
+                        <div class="alert alert-danger">
+                            <strong>Erreur:</strong> Email incorrect
+                        </div>
+                    <?php
+                    break;
+                    case 'already':
+                        ?>
+                        <div class="alert alert-danger">
+                            <strong>Erreur:</strong> Ce compte n'existe pas
+                        </div>
+                    <?php
+                    break;
+                }
+            }
+        ?>
+        <form action="functions/connexion.php" class="login-form" metho="POST">
             <h3>Se connecter</h3>
             <input type="email" placeholder="Votre mail" class="box">
             <input type="password" placeholder="Votre mot de passe" class="box">
@@ -59,6 +90,44 @@
             <p>Vous n'avez pas de compte  <span id= "subscribe-link">Créér un compte</span></p>
             <input type="submit" value="Se connecter" class="btn">
         </form>
+        <?php 
+            if(isset($_GET['reg_err'])){
+
+                $err = htmlspecialchars($_GET['reg_err']);
+
+                switch($err)
+                {
+                    case 'password':
+                        ?>
+                        <div class="alert alert-danger">
+                            <strong>Erreur:</strong> Mot de passe trop long
+                        </div>
+                    <?php
+                    break;
+                    case 'email':
+                        ?>
+                        <div class="alert alert-danger">
+                            <strong>Erreur:</strong> Email trop long 
+                        </div>
+                    <?php
+                    break;
+                    case 'success':
+                        ?>
+                        <div class="alert alert-success">
+                            <strong>Succes:</strong> Inscription réussie
+                        </div>
+                    <?php
+                    break;
+                    case 'already':
+                        ?>
+                        <div class="alert alert-success">
+                            <strong>Succes:</strong> Ce compte existe déja
+                        </div>
+                    <?php
+                    break;
+                }
+            }
+        ?>
         <form action="functions/inscription.php" class="subscribe-form" id="subscribe-link" method="POST">
             <h3>S'incrire</h3>
             <input type="text" placeholder="Votre Nom" class="box" name="first_name" required minlength="2">
@@ -73,8 +142,7 @@
     <!-- home section starts -->
     <section class="home"> 
         <div class="content">
-            <h1>Sapinoël</h1>
-            <p>La <span> magie de Noël</span> commence par un sapin</p>
+            <p>La <span> magie de Noël</span> <br>commence par un sapin...</p>
         </div>
     </section>
     <!-- home section ends -->

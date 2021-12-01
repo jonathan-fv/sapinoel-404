@@ -1,5 +1,7 @@
 <?php
-require_once(__DIR__.'../../functions/product.php');
+session_start();
+require_once(__DIR__.'../../functions/dbconnect.php');
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -16,6 +18,6 @@ require_once(__DIR__.'../../functions/product.php');
     <title>Sapinoël</title>
 </head>
 <?php require_once('../pages/header.php') ?>
-    
+    <h1>Bonjour! <?= $_SESSION['last_name']; ?></h1>
 </body>
 </html>

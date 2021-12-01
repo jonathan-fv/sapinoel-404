@@ -1,5 +1,4 @@
 <?php
-
     try
     {
         $pdo = new PDO('mysql:host=localhost;dbname=sapinoel;charset=utf8','root','');

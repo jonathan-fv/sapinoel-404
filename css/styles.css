@@ -283,7 +283,7 @@ a{
     background-position: center;
     background-size: cover;
     padding-top: 15rem;
-    padding-bottom: 10rem;
+    padding-bottom: 15rem;
 }
 .home .content{
     text-align: center;
@@ -331,7 +331,12 @@ a{
 .products .product-slider .box img{
     width: 70%;
     height: auto;
+    /* margin: 50px 0 100px 0;
+    transition: all 0.5s ease-in-out; */
 }
+/* .products .product-slider .box img:hover{
+    transform: scale(1.5);
+} */
 .products .product-slider .box h3{
     font-size: 2.5rem;
     color: var(--black);
@@ -495,7 +500,6 @@ footer .box-container .box .btn:hover{
     /* Navigation CSS */
     .header .navbar a{
         font-size: 1.5rem;
-        
     }
 }
 @media (max-width: 991px) {
@@ -543,6 +547,9 @@ footer .box-container .box .btn:hover{
     /* General CSS */
     html{
         font-size: 50%;
+    }
+    .header .logo{
+        font-size: 4rem;
     }
     .heading{
         font-size: 2.5rem;
