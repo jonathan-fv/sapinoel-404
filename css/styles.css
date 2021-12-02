@@ -4,7 +4,7 @@
 
 /* Variables CSS */
 :root{
-    --gold : #E8B017;
+    --gold : #DA9100;
     --black : #333;
     --red : #F01E28;
     --green : #095228;
@@ -37,6 +37,7 @@ section{
 }
 a{
     color: var(--black);
+    text-decoration: none;
 }
 .btn{
     margin-top: 1rem;
@@ -279,8 +280,8 @@ a{
     display: flex;
     align-items: center;
     justify-content: left;
-    background: url(../img/banner.jpg) no-repeat;
-    background-position: center;
+    background: linear-gradient(90deg, rgba(255,255,255,0.44019614681810226) 0%, rgba(255,255,255,0.26092443813462884) 30%, rgba(255,255,255,0) 63%), url(../img/banner.jpg) no-repeat;;
+    background-position: bottom;
     background-size: cover;
     padding-top: 15rem;
     padding-bottom: 15rem;
@@ -420,6 +421,9 @@ a{
     color: var(--black);
     padding: 1rem 0;
 }
+.table > tbody > tr > td {
+    vertical-align: middle;
+}
 footer{
     background: var(--gold);
     padding: 4rem;
@@ -492,7 +496,72 @@ footer .box-container .box .btn:hover{
     background: var(--green);
     color: #fff;
 }
-
+.products-item{
+    display: flex;
+    justify-content: space-between;
+    background-color: #eee;
+}
+.products-item .box{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+    width: 100%; 
+    flex-wrap: wrap;
+}
+.products-item .box .product_sapin{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    border: var(--border);
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    margin: 1rem 0;
+    width: 90%;
+    background-color: #fff;
+}
+.products-item h5{
+    font-size: 1.6rem;
+    text-decoration: underline;
+}
+.products-item h3{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.products-item h3 span{
+    font-weight: 400;
+    font-size: 2.4rem;
+}
+.products-item a{
+    margin: 5%;
+}
+.products-item .price{
+    font-size: 2rem;
+    color : var(--black);
+    padding: .5rem 0;
+    text-align: center;
+    width: 20%;
+    color : var(--red);
+    font-weight: 600;
+}
+.products-item .product_sapin img{
+    margin: 2rem 0;
+    width: 28%;
+    height: auto;
+}
+.products-item .product_sapin:hover img{
+    transform: scale(1.1);
+}
+.products-item .description{
+    font-size: 1.4rem;
+    text-align: justify;
+    margin: 2rem 2rem 1rem 2rem;
+    width: 40%;
+    
+}
+.products-item .product_height{
+    font-size: 1.4rem;
+}
 
 
 /* Responsive CSS */  

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Sapinoël</title>
 </head>
@@ -33,7 +33,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i>
                         </div>
-                        <a href="#" class="btn">Voir l'article</a>
+                        <a href="./pages/sapins_naturels.php" class="btn">Voir d'autres articles</a>
                     </div>
                 <?php endforeach; ?>
             </div>
@@ -55,7 +55,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i>
                         </div>
-                        <a href="#" class="btn">Voir l'article</a>
+                        <a href="./pages/sapins_artificiels.php" class="btn">Voir d'autres articles</a>
                     </div>
                 <?php endforeach; ?>
             </div>
@@ -78,7 +78,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i>
                         </div>
-                        <a href="#" class="btn">Voir l'article</a>
+                        <a href="./pages/decorations.php" class="btn">Voir d'autres articles</a>
                     </div>
                 <?php endforeach; ?>
             </div>
@@ -92,18 +92,23 @@
         <div class="box-container">
             <div class="box">
                 <img src="./img/our1.jpg" alt="our1">
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum minus unde quam est! Consequatur sapiente, nesciunt soluta, delectus facere qui quis adipisci molestias rem incidunt repellat esse at facilis doloribus. </p>
+                <h3>EXPÉRIENCE</h3>
+                <p>Nous sommes en activité depuis plusieurs jours. </p>
             </div>
             <div class="box">
                 <img src="./img/our2.jpg" alt="our2">
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum minus unde quam est! Consequatur sapiente, nesciunt soluta, delectus facere qui quis adipisci molestias rem incidunt repellat esse at facilis doloribus. </p>
+                <h3>SAVOIR-FAIRE</h3>
+                <p>Nous vous garantissons un service de qualité. </p>
             </div>
             <div class="box">
                 <img src="./img/our3.jpg" alt="our3">
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum minus unde quam est! Consequatur sapiente, nesciunt soluta, delectus facere qui quis adipisci molestias rem incidunt repellat esse at facilis doloribus. </p>
+                <h3>SAPINS VARIÉS</h3>
+                <p>Nous vous proposons différentes variétés de sapins. </p>
+            </div>
+            <div class="box">
+                <img src="./img/our4.jpg" alt="our4">
+                <h3>LIVRAISON</h3>
+                <p>Nous assurons la livraison dans tout le Calvados. </p>
             </div>
         </div>
     </section>

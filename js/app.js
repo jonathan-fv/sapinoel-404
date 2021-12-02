@@ -2,17 +2,6 @@
 let searchForm = document.querySelector('.search-form')
 document.querySelector('#search-btn').onclick = () => {
     searchForm.classList.toggle('active')
-    shoppingCart.classList.remove('active')
-    loginForm.classList.remove('active')
-    subscribeForm.classList.remove('active')
-    navbar.classList.remove('active')
-}
-
-// afficher/masquer le panier
-let shoppingCart = document.querySelector('.shopping-cart')
-document.querySelector('#cart-btn').onclick = () => {
-    shoppingCart.classList.toggle('active')
-    searchForm.classList.remove('active')
     loginForm.classList.remove('active')
     subscribeForm.classList.remove('active')
     navbar.classList.remove('active')
@@ -24,7 +13,6 @@ document.querySelector('#login-btn').onclick = () => {
     loginForm.classList.toggle('active')
     subscribeForm.classList.remove('active')
     searchForm.classList.remove('active')
-    shoppingCart.classList.remove('active')
     navbar.classList.remove('active')
 }
 
@@ -34,7 +22,6 @@ document.querySelector("#subscribe-link").onclick = () => {
     subscribeForm.classList.toggle("active")
     loginForm.classList.remove("active")
     searchForm.classList.remove("active")
-    shoppingCart.classList.remove("active")
     navbar.classList.remove('active')
 };
 
@@ -43,13 +30,11 @@ let navbar = document.querySelector('.navbar')
 document.querySelector('#menu-btn').onclick = () => {
     navbar.classList.toggle('active')
     searchForm.classList.remove('active')
-    shoppingCart.classList.remove('active')
     loginForm.classList.remove('active')
     subscribeForm.classList.remove('active')
 }
 window.onscroll= () => {
     searchForm.classList.remove('active')
-    shoppingCart.classList.remove('active')
     loginForm.classList.remove('active')
     navbar.classList.remove('active')
     subscribeForm.classList.remove('active')

@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <body>
     <!-- header section starts -->
     <header class="header">
@@ -11,7 +12,16 @@
         <div class="icons">
             <div class="fas fa-bars" id="menu-btn"></div>
             <div class="fas fa-search" id="search-btn"></div>
-            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <?php
+                $count = 0;
+                if(isset($_SESSION['cart']))
+                {
+                    $count = count($_SESSION['cart']);
+                }
+            ?>
+            <div class="fas fa-shopping-cart" id="cart-btn">
+                <a href="../pages/cart.php"><span class="badge badge-danger"><?= $count ?></span></a>
+            </div>
             <div class="fas fa-user" id="login-btn"></div>
         </div>
         <form action="" class="search-form">
@@ -19,38 +29,6 @@
             <label for="scearch-box"></label>
             <button><i class="fas fa-search"></i></button>
         </form>
-        <div class="shopping-cart">
-            <h4>Mon panier</h4>
-            <div class="box">
-                <i class="fas fa-trash-alt"></i>
-                <img src="../img/sapin1.png" alt="sapin">
-                <div class="content">
-                    <h3>Sapin 1</h3>
-                    <span class="price">29,99€</span>
-                    <span class="quantity">Qté : 1</span>
-                </div>
-            </div>
-            <div class="box">
-                <i class="fas fa-trash-alt"></i>
-                <img src="../img/sapin1.png" alt="sapin">
-                <div class="content">
-                    <h3>Sapin 2</h3>
-                    <span class="price">49,99€</span>
-                    <span class="quantity">Qté : 1</span>
-                </div>
-            </div>
-            <div class="box">
-                <i class="fas fa-trash-alt"></i>
-                <img src="../img/sapin1.png" alt="sapin">
-                <div class="content">
-                    <h3>Sapin 3</h3>
-                    <span class="price">69,99€</span>
-                    <span class="quantity">Qté : 1</span>
-                </div>
-            </div>
-            <div class="total">Total : 149,97€</div>
-            <a href="#" class="btn">Commander</a>
-        </div>
         <?php 
             if(isset($_GET['login_err']))
             {
