@@ -10,7 +10,7 @@ session_start();
                     echo "
                     <script>
                         alert('Article déjà présent dans votre panier')
-                        window.location;href='./index.php'
+                        window.location.href='javascript:history.back()'
                     </script>";
                 }
                 else{
@@ -19,7 +19,7 @@ session_start();
                 echo "
                     <script>
                         alert('Article aujouté')
-                        window.location;href='./index.php'
+                        window.location.href='javascript:history.back()'
                     </script>";
                 }
             }
@@ -28,7 +28,7 @@ session_start();
                 echo "
                     <script>
                         alert('Article aujouté')
-                        window.location;href='./index.php'
+                        window.location.href='javascript:history.back()'
                     </script>";
             }
         }
@@ -36,7 +36,7 @@ session_start();
         {
             foreach($_SESSION['cart'] as $key => $value)
             {
-                if($value['article']==$_POST['article'])
+                if($value['article']==$_POST['removeItem'])
                 {
                     unset($_SESSION['cart'][$key]);
                     $_SESSION['cart']=array_values($_SESSION['cart']);

@@ -74,7 +74,7 @@ require_once(__DIR__.'../../functions/product.php');
                         </label>
                         <br>
                     </div>
-                    <button class="btn btn-block">Commandez</button>
+                    <button class="btn btn-block">Commander</button>
                 </form>
             </div>
             

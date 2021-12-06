@@ -18,6 +18,7 @@ require_once(__DIR__.'../../functions/dbconnect.php');
     <title>Sapinoël - Mon Profil</title>
 </head>
 <?php require_once('../pages/header.php') ?>
-    <h1>Bonjour! <?= $_SESSION['last_name']; ?></h1>
+    <h1>Bonjour! <?= $_SESSION['last_name'];
+    ?></h1>
 </body>
 </html>
