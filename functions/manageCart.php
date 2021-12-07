@@ -42,8 +42,8 @@ session_start();
                     $_SESSION['cart']=array_values($_SESSION['cart']);
                     echo "
                         <script>
-                            alert('L'\'article à été supprimé de votre panier)
-                            window.location.href='../pages/cart.php'
+                            alert('L\'article à bien été supprimé')
+                            window.location.href='javascript:history.back()'
                         </script>
                     ";
                 }

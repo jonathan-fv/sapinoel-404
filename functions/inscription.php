@@ -28,7 +28,7 @@ if(isset($_POST['valider'])){
                             if(strlen($password) <= 100){
 
                                 $password = $salt.$_POST['password'].$salt;
-                                $password = password_hash($password, PASSWORD_BCRYPT);
+                                $password = password_hash($password, PASSWORD_DEFAULT);
 
                                 $sql = $pdo->prepare ("INSERT INTO `user`(last_name,first_name,email,password)
                                                         VALUES (:nom, :prenom, :email, :password)");

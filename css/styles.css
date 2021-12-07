@@ -526,10 +526,11 @@ footer .box-container .box .btn:hover{
     border: var(--border);
     border-radius: 0.5rem;
     box-shadow: var(--box-shadow);
-    margin: 1rem 0;
+    margin: 1rem auto;
     width: 90%;
     background-color: #fff;
 }
+
 .products-item h5{
     font-size: 1.6rem;
     text-decoration: underline;
@@ -571,9 +572,6 @@ footer .box-container .box .btn:hover{
 }
 .products-item .product_height{
     font-size: 1.4rem;
-}
-.form-check label{
-    
 }
 
 /* Responsive CSS */  
@@ -623,7 +621,6 @@ footer .box-container .box .btn:hover{
     }
     
 }
-
 @media (max-width: 450px) {
     /* General CSS */
     html{
