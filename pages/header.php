@@ -1,8 +1,9 @@
 <?php session_start(); ?>
+
 <body>
     <!-- header section starts -->
     <header class="header">
-    <a href="/index.php" class="logo"><i class="las la-tree"></i>Sapinoël</a>
+        <a href="/index.php" class="logo"><i class="las la-tree"></i>Sapinoël</a>
         <nav class="navbar">
             <a href="/pages/sapins_naturels.php">Sapins Naturels</a>
             <a href="/pages/sapins_artificiels.php">Sapins Artificiels</a>
@@ -19,9 +20,11 @@
                     $count = count($_SESSION['cart']);
                 }
             ?>
-            <div class="fas fa-shopping-cart" id="cart-btn">
-                <a href="../pages/cart.php"><span class="badge badge-danger"><?= $count ?></span></a>
-            </div>
+            <a href="../pages/cart.php">
+                <div class="fas fa-shopping-cart" id="cart-btn">
+                    <span class="badge badge-danger"><?= $count ?></span>
+                </div>
+            </a>
             <div class="fas fa-user" id="login-btn"></div>
         </div>
         <form action="" class="search-form">
@@ -38,24 +41,24 @@
                 {
                     case 'password':
                         ?>
-                        <div class="alert alert-danger">
-                            <strong>Erreur:</strong> Mot de passe incorrect
-                        </div>
-                    <?php
+        <div class="alert alert-danger">
+            <strong>Erreur:</strong> Mot de passe incorrect
+        </div>
+        <?php
                     break;
                     case 'email':
                         ?>
-                        <div class="alert alert-danger">
-                            <strong>Erreur:</strong> Email incorrect
-                        </div>
-                    <?php
+        <div class="alert alert-danger">
+            <strong>Erreur:</strong> Email incorrect
+        </div>
+        <?php
                     break;
                     case 'already':
                         ?>
-                        <div class="alert alert-danger">
-                            <strong>Erreur:</strong> Ce compte n'existe pas
-                        </div>
-                    <?php
+        <div class="alert alert-danger">
+            <strong>Erreur:</strong> Ce compte n'existe pas
+        </div>
+        <?php
                     break;
                 }
             }
@@ -65,7 +68,7 @@
             <input type="email" placeholder="Votre mail" class="box">
             <input type="password" placeholder="Votre mot de passe" class="box">
             <p>Mot de passe oublié <a href="#">Cliquez ici !</a></p>
-            <p>Vous n'avez pas de compte  <span id= "subscribe-link">Créér un compte</span></p>
+            <p>Vous n'avez pas de compte <span id="subscribe-link">Créér un compte</span></p>
             <input type="submit" value="Se connecter" class="btn">
         </form>
         <?php 
@@ -77,31 +80,31 @@
                 {
                     case 'password':
                         ?>
-                        <div class="alert alert-danger">
-                            <strong>Erreur:</strong> Mot de passe trop long
-                        </div>
-                    <?php
+        <div class="alert alert-danger">
+            <strong>Erreur:</strong> Mot de passe trop long
+        </div>
+        <?php
                     break;
                     case 'email':
                         ?>
-                        <div class="alert alert-danger">
-                            <strong>Erreur:</strong> Email trop long 
-                        </div>
-                    <?php
+        <div class="alert alert-danger">
+            <strong>Erreur:</strong> Email trop long
+        </div>
+        <?php
                     break;
                     case 'success':
                         ?>
-                        <div class="alert alert-success">
-                            <strong>Succes:</strong> Inscription réussie
-                        </div>
-                    <?php
+        <div class="alert alert-success">
+            <strong>Succes:</strong> Inscription réussie
+        </div>
+        <?php
                     break;
                     case 'already':
                         ?>
-                        <div class="alert alert-success">
-                            <strong>Succes:</strong> Ce compte existe déja
-                        </div>
-                    <?php
+        <div class="alert alert-success">
+            <strong>Succes:</strong> Ce compte existe déja
+        </div>
+        <?php
                     break;
                 }
             }
@@ -118,7 +121,7 @@
     </header>
     <!-- header section ends -->
     <!-- home section starts -->
-    <section class="home"> 
+    <section class="home">
         <div class="content">
             <p>La <span> magie de Noël</span> <br>commence par un sapin...</p>
         </div>
