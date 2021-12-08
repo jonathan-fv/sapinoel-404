@@ -1,4 +1,18 @@
 <?php session_start(); ?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Sapinoël</title>
+</head>
 <body>
     <!-- header section starts -->
     <header class="header">
@@ -98,7 +112,7 @@
                     break;
                     case 'already':
                         ?>
-                        <div class="alert alert-success">
+                        <div class="alert alert-danger">
                             <strong>Succes:</strong> Ce compte existe déja
                         </div>
                     <?php
@@ -108,8 +122,8 @@
         ?>
         <form action="functions/inscription.php" class="subscribe-form" id="subscribe-link" method="POST">
             <h3>S'incrire</h3>
-            <input type="text" placeholder="Votre Nom" class="box" name="first_name" required minlength="2">
-            <input type="text" placeholder="Votre Prénom" class="box" name="last_name" required minlength="2">
+            <input type="text" placeholder="Votre Nom" class="box" name="last_name" required minlength="2">
+            <input type="text" placeholder="Votre Prénom" class="box" name="first_name" required minlength="2">
             <input type="email" placeholder="Votre mail" class="box" name="email" required minlength="4">
             <input type="password" placeholder="Votre mot de passe" class="box" name="password" required minlength="4">
             <p>Mot de passe oublié <a href="#">Cliquez ici !</a></p>
