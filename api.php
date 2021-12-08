@@ -78,7 +78,7 @@
                 'id' => $product['id'],
                 'name' => $product['product_name'],
                 'description' => $product['product_desc'],
-                'prix' => $product['product_price'],
+                'prix' => number_format($product['product_price'],2, ',', ' '),
                 'image' => $product['product_img'],
                 'taille' => $product['height'],
                 'categorie' => $product['category'],

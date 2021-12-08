@@ -30,7 +30,7 @@ require_once(__DIR__.'../../functions/product.php');
                         <p><?= $naturalFir['product_desc'] ?></p>
                     </div>
                     <div class="price">
-                        <p><?= $naturalFir['product_price'].' €' ?></p>
+                        <p><?= number_format($naturalFir['product_price'], 2,',',' ').' €' ?></p>
                         <button type=submit class="btn" name="AddToCart">Ajouter au panier</button>
                         <input type="hidden" name="article" value="<?= $naturalFir['product_name'] ?>">
                         <input type="hidden" name="prix" value="<?= $naturalFir['product_price'] ?>">
